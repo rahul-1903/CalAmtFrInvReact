@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CalAmtFrInvReact/static/css/main.f855e6bc.css",
+    "main.js": "/CalAmtFrInvReact/static/js/main.92bd43d8.js",
+    "static/js/787.18913ecd.chunk.js": "/CalAmtFrInvReact/static/js/787.18913ecd.chunk.js",
+    "index.html": "/CalAmtFrInvReact/index.html",
+    "main.f855e6bc.css.map": "/CalAmtFrInvReact/static/css/main.f855e6bc.css.map",
+    "main.92bd43d8.js.map": "/CalAmtFrInvReact/static/js/main.92bd43d8.js.map",
+    "787.18913ecd.chunk.js.map": "/CalAmtFrInvReact/static/js/787.18913ecd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.92bd43d8.js"
+  ]
+}

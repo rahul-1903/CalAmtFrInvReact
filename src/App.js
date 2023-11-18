@@ -1,12 +1,18 @@
 import './App.css';
 import { Children, useState } from 'react';
 
-const fruits = ['apple', 'orangeOriginal', 'orangeMalta', 'banana'];
+const fruits = ['apple', 'appleDelicious', 'orangeOriginal', 'orangeMalta', 'banana', 'anar', 'naspati'];
 const fruitsInventory = {
   "apple": {
     "id": "apple",
     "name": "apple",
     "price": 120,
+    "quantity": 0
+  },
+  "appleDelicious": {
+    "id": "appleDelicious",
+    "name": "appleDelicious",
+    "price": 140,
     "quantity": 0
   },
   "orangeOriginal": {
@@ -25,6 +31,18 @@ const fruitsInventory = {
     "id": "banana",
     'name': 'banana',
     "price": 50,
+    "quantity": 0
+  },
+  "anar": {
+    "id": "anar",
+    "name": "anar",
+    "price": 200,
+    "quantity": 0
+  },
+  "naspati": {
+    "id": "naspati",
+    "name": "naspati",
+    "price": 220,
     "quantity": 0
   }
  }
@@ -147,7 +165,20 @@ function App() {
   }
 
   const handleAddItem = () => {
-    setTotalCustomers([...totalCustomers, customerToAdd])
+    if (customerToAdd.length === 0) {
+      let i = totalCustomers.length + 1;
+      while (true) {
+        const tempCustomerToAdd = `customer+${i}`;
+        if (totalCustomers.includes(tempCustomerToAdd)) {
+          i++;
+        } else {
+          setTotalCustomers([...totalCustomers, tempCustomerToAdd])
+          break;
+        }
+      }
+    } else {
+      setTotalCustomers([...totalCustomers, customerToAdd])
+    }
   }
 
   return (
